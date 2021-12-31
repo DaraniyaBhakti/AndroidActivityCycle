@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listCardCornerRadius">3dp</dimen>
+    <dimen name="listCardViewMargin">2dp</dimen>
+    <dimen name="listTextViewPadding">15dp</dimen>
+    <dimen name="listTextSize">20sp</dimen>
+    <dimen name="listTextSizeDescription">15sp</dimen>
+    <dimen name="gridTextSize">18sp</dimen>
+    <dimen name="gridTextViewPadding">20dp</dimen>
+    <dimen name="gridCardCornerRadius">5dp</dimen>
+    <dimen name="gridCardMargin">5dp</dimen>
+    <dimen name="margin3dp">3dp</dimen>
+    <dimen name="dimen0dp">0dp</dimen>
+    <dimen name="dimen6dp">6dp</dimen>
+</resources>

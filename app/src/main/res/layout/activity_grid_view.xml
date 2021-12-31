@@ -10,7 +10,7 @@
         android:id="@+id/gridView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:horizontalSpacing="6dp"
+        android:horizontalSpacing="@dimen/dimen6dp"
         android:numColumns="2"
-        android:verticalSpacing="6dp"/>
+        android:verticalSpacing="@dimen/dimen6dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

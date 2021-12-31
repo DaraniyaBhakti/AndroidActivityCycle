@@ -13,15 +13,15 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class listAdapter extends ArrayAdapter<ModelClass> {
+public class ListAdapter extends ArrayAdapter<LifeCycleClass> {
 
     private int resource;
-    private Context Con;
+    private Context context;
 
-    public listAdapter(@NonNull Context context, int resource, List<ModelClass> object) {
+    public ListAdapter(@NonNull Context context, int resource, List<LifeCycleClass> object) {
         super(context, resource, object);
         this.resource = resource;
-        this.Con = context;
+        this.context = context;
     }
 
     @NonNull
@@ -34,7 +34,7 @@ public class listAdapter extends ArrayAdapter<ModelClass> {
             LayoutInflater layoutInflater = LayoutInflater.from(getContext());
             view = layoutInflater.inflate(R.layout.listview, null);
         }
-        ModelClass text = getItem(position);
+        LifeCycleClass text = getItem(position);
 
 
         if (text != null){

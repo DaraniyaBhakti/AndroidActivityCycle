@@ -18,12 +18,12 @@ public class GridViewActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         Bundle Bundle = intent.getBundleExtra("data");
-        ArrayList<ModelClass> callback;
-        callback = (ArrayList<ModelClass>) Bundle.getSerializable("callback");
+        ArrayList<LifeCycleClass> callback;
+        callback = (ArrayList<LifeCycleClass>) Bundle.getSerializable("callback");
 
 
         GridView grid = findViewById(R.id.gridView);
-        ListAdapter adapter = new gridAdapter(this, R.layout.gridview,callback);
+        ListAdapter adapter = new GridAdapter(this, R.layout.gridview,callback);
         grid.setAdapter(adapter);
     }
 }

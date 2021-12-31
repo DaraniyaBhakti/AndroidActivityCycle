@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +14,7 @@
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:dividerHeight="3dp"
+        android:dividerHeight="@dimen/margin3dp"
 
         />
     </LinearLayout>
@@ -27,21 +26,19 @@
         android:background="@color/white">
         <Button
             android:id="@+id/btnSend"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dimen0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:padding="5dp"
-            android:text="SEND"
+            android:layout_margin="@dimen/margin3dp"
+            android:text="@string/send"
             />
         <Button
             android:id="@+id/btnGrid"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dimen0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:padding="5dp"
-            android:text="GRID"/>
+            android:layout_margin="@dimen/margin3dp"
+            android:text="@string/grid"/>
     </LinearLayout>
 
     </FrameLayout>

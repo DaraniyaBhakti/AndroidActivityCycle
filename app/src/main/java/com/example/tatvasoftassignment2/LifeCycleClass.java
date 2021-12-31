@@ -5,7 +5,7 @@ import android.os.Parcel;
 
 import java.io.Serializable;
 
-public class ModelClass implements Serializable {
+public class LifeCycleClass implements Serializable {
         private String Callback;
         private String Timestamp;
         private String Description;
@@ -33,10 +33,10 @@ public class ModelClass implements Serializable {
         Description = description;
     }
 
-    public ModelClass() {
+    public LifeCycleClass() {
         }
 
-    public ModelClass(String callback, String timestamp, String description) {
+    public LifeCycleClass(String callback, String timestamp, String description) {
         Callback = callback;
         Timestamp = timestamp;
         Description = description;

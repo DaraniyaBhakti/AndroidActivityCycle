@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="listCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/listCardViewMargin</item>
+    </style>
+
+    <style name="listTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/listTextViewPadding</item>
+        <item name="android:textSize">@dimen/listTextSize</item>
+    </style>
+
+    <style name="gridTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:padding">@dimen/gridTextViewPadding</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/gridTextSize</item>
+    </style>
+</resources>

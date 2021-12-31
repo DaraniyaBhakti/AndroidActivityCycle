@@ -2,39 +2,24 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
-    android:layout_margin="5dp"
-    app:cardCornerRadius="5dp"
+    android:layout_margin="@dimen/gridCardMargin"
+    app:cardCornerRadius="@dimen/gridCardCornerRadius"
     >
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#d1d1d1">
+    android:background="@color/color_card_background">
     <TextView
         android:id="@+id/tvStateGrid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:padding="20dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="State"
-        android:textSize="20sp" />
+        style="@style/gridTextView" />
 
     <TextView
         android:id="@+id/tvTimeStampGrid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="0"
-        android:layout_column="1"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-black"
-        android:padding="20dp"
-        android:text="TimeStamp"
-
+        style="@style/gridTextView"
         />
 </LinearLayout>
 </androidx.cardview.widget.CardView>

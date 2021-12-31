@@ -13,20 +13,20 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class gridAdapter extends ArrayAdapter<ModelClass> {
+public class GridAdapter extends ArrayAdapter<LifeCycleClass> {
 
-    List<ModelClass> listofcyclecallback = new ArrayList<ModelClass>();
+    List<LifeCycleClass> lifeCycleCallback = new ArrayList<LifeCycleClass>();
     int Resource;
 
-    public gridAdapter(@NonNull Context context, int resource, List<ModelClass> obj) {
+    public GridAdapter(@NonNull Context context, int resource, List<LifeCycleClass> obj) {
         super(context, resource, obj);
-        listofcyclecallback = obj;
+        lifeCycleCallback = obj;
         Resource = resource;
     }
 
     @Override
     public int getCount() {
-        return listofcyclecallback.size();
+        return lifeCycleCallback.size();
     }
 
     @NonNull
@@ -41,7 +41,7 @@ public class gridAdapter extends ArrayAdapter<ModelClass> {
         TextView tvStateGrid = v.findViewById(R.id.tvStateGrid);
         TextView tvTimeStampGrid = v.findViewById(R.id.tvTimeStampGrid);
 
-        ModelClass item = listofcyclecallback.get(position);
+        LifeCycleClass item = lifeCycleCallback.get(position);
 
         tvStateGrid.setText(item.getEvent());
         tvTimeStampGrid.setText(item.getTime());
